@@ -18,7 +18,7 @@ console.log("Original number of Plants = " + OriginalPlants);
 console.log("Total Space needed for Plants  = " + totalSpaceNeededForPlants);
 
 // console.log("Total Space if " + plantContainerRadius );
-console.log("Max Capacity of plants = " +  maxPlantsCapacityOfGarden);
+console.log("Max Capacity of plants = " + maxPlantsCapacityOfGarden);
 
 console.log("Number of Plants after " + week + " weeks = " + TotalPlants);
 
@@ -33,13 +33,13 @@ console.log("---------  WEEK 1 --------");
 {
     let week = 1;
     OriginalPlants = 20;
- //    let TotalPlants = OriginalPlants * (2 ** week); // total plants
-TotalPlants = 20; // DOES THE FIRST WEEK GROW PLANTS OR WHAT I M CONFUSED
+    let TotalPlants = OriginalPlants * (2 ** week); // total plants
+    TotalPlants = 20; // DOES THE FIRST WEEK GROW PLANTS OR WHAT I M CONFUSED
     let maxPlantsCapacityOfGarden = (area / minimumSpace);
     let totalSpaceNeededForPlants = (TotalPlants * minimumSpace);
 
     console.log("Number of Plants after " + week + " weeks = " + TotalPlants);
-    console.log("Max Capacity of plants = " +  maxPlantsCapacityOfGarden);
+    console.log("Max Capacity of plants = " + maxPlantsCapacityOfGarden);
 
 
     let Pruned;
@@ -54,7 +54,7 @@ TotalPlants = 20; // DOES THE FIRST WEEK GROW PLANTS OR WHAT I M CONFUSED
 
     // monitored 
 
-    let Monitored = ((totalSpaceNeededForPlants <.80 * maxPlantsCapacityOfGarden)  && (totalSpaceNeededForPlants > .50 * maxPlantsCapacityOfGarden) )  ? (true) : (false);
+    let Monitored = ((totalSpaceNeededForPlants < .80 * maxPlantsCapacityOfGarden) && (totalSpaceNeededForPlants > .50 * maxPlantsCapacityOfGarden)) ? (true) : (false);
     if (Monitored) {
         console.log("Week " + week + " Growing at an acceptable rate, Monitered Plants: " + Monitored);
     }
@@ -64,7 +64,7 @@ TotalPlants = 20; // DOES THE FIRST WEEK GROW PLANTS OR WHAT I M CONFUSED
 
     //planted 
 
-    let Planted = (totalSpaceNeededForPlants < (.50 * area )) ? (true) : (false);
+    let Planted = (totalSpaceNeededForPlants < (.50 * area)) ? (true) : (false);
     if (Planted) {
         console.log("Week " + week + " More room to put more Plants!")
     }
@@ -84,7 +84,7 @@ console.log("---------  WEEK 2 --------");
     let totalSpaceNeededForPlants = (TotalPlants * minimumSpace);
 
     console.log("Number of Plants after " + week + " weeks = " + TotalPlants);
-    console.log("Max Capacity of plants = " +  maxPlantsCapacityOfGarden);
+    console.log("Max Capacity of plants = " + maxPlantsCapacityOfGarden);
 
 
     let Pruned;
@@ -99,7 +99,7 @@ console.log("---------  WEEK 2 --------");
 
     // monitored 
 
-    let Monitored = ((totalSpaceNeededForPlants <.80 * maxPlantsCapacityOfGarden)  && (totalSpaceNeededForPlants > .50 * maxPlantsCapacityOfGarden) )  ? (true) : (false);
+    let Monitored = ((totalSpaceNeededForPlants < .80 * maxPlantsCapacityOfGarden) && (totalSpaceNeededForPlants > .50 * maxPlantsCapacityOfGarden)) ? (true) : (false);
     if (Monitored) {
         console.log("Week " + week + " Growing at an acceptable rate, Monitered Plants: " + Monitored);
     }
@@ -109,7 +109,7 @@ console.log("---------  WEEK 2 --------");
 
     //planted 
 
-    let Planted = (totalSpaceNeededForPlants < (.50 * area )) ? (true) : (false);
+    let Planted = (totalSpaceNeededForPlants < (.50 * area)) ? (true) : (false);
     if (Planted) {
         console.log("Week " + week + " More room to put more Plants!")
     }
@@ -128,7 +128,7 @@ console.log("---------  WEEK 3 --------");
     let totalSpaceNeededForPlants = (TotalPlants * minimumSpace);
 
     console.log("Number of Plants after " + week + " weeks = " + TotalPlants);
-    console.log("Max Capacity of plants = " +  maxPlantsCapacityOfGarden);
+    console.log("Max Capacity of plants = " + maxPlantsCapacityOfGarden);
 
 
     let Pruned;
@@ -143,7 +143,7 @@ console.log("---------  WEEK 3 --------");
 
     // monitored 
 
-    let Monitored = ((totalSpaceNeededForPlants <.80 * maxPlantsCapacityOfGarden)  && (totalSpaceNeededForPlants > .50 * maxPlantsCapacityOfGarden) )  ? (true) : (false);
+    let Monitored = ((totalSpaceNeededForPlants < .80 * maxPlantsCapacityOfGarden) && (totalSpaceNeededForPlants > .50 * maxPlantsCapacityOfGarden)) ? (true) : (false);
     if (Monitored) {
         console.log("Week " + week + " Growing at an acceptable rate, Monitered Plants: " + Monitored);
     }
@@ -153,7 +153,7 @@ console.log("---------  WEEK 3 --------");
 
     //planted 
 
-    let Planted = (totalSpaceNeededForPlants < (.50 * area )) ? (true) : (false);
+    let Planted = (totalSpaceNeededForPlants < (.50 * area)) ? (true) : (false);
     if (Planted) {
         console.log("Week " + week + " More room to put more Plants!")
     }
@@ -171,6 +171,7 @@ console.log("---------  WEEK 10 --------");
 
 
 {
+
     let week = 10;
     OriginalPlants = 100;
     let TotalPlants = OriginalPlants * (2 ** week); // total plants
@@ -179,7 +180,7 @@ console.log("---------  WEEK 10 --------");
     let totalSpaceNeededForPlants = (TotalPlants * minimumSpace);
 
     console.log("Number of Plants after " + week + " weeks = " + TotalPlants);
-    console.log("Max Capacity of plants = " +  maxPlantsCapacityOfGarden);
+    console.log("Max Capacity of plants = " + maxPlantsCapacityOfGarden);
 
 
     let Pruned;
@@ -194,7 +195,7 @@ console.log("---------  WEEK 10 --------");
 
     // monitored 
 
-    let Monitored = ((totalSpaceNeededForPlants <.80 * area)  && (totalSpaceNeededForPlants > .50 * area) )  ? (true) : (false);
+    let Monitored = ((totalSpaceNeededForPlants < .80 * area) && (totalSpaceNeededForPlants > .50 * area)) ? (true) : (false);
     if (Monitored) {
         console.log("Week " + week + " Growing at an acceptable rate, Monitered Plants: " + Monitored);
     }
@@ -204,7 +205,7 @@ console.log("---------  WEEK 10 --------");
 
     //planted 
 
-    let Planted = (totalSpaceNeededForPlants < (.50 * area )) ? (true) : (false);
+    let Planted = (totalSpaceNeededForPlants < (.50 * area)) ? (true) : (false);
     if (Planted) {
         console.log("Week " + week + " More room to put more Plants!")
     }
@@ -214,8 +215,26 @@ console.log("---------  WEEK 10 --------");
 
     //102400 total plants -  multiply by the minimum space needed 
     // 
-    let NewSpaceNeeded = (TotalPlants * .8) 
-    console.log (NewSpaceNeeded);
+    let NewSpaceNeeded = (TotalPlants * .8)
+    console.log(NewSpaceNeeded);
 
+    let NewRadius = Math.sqrt(NewSpaceNeeded / PI);
+    console.log("This is the new radius required " + NewRadius);  // i think 
+
+
+
+    //part 3  DOnt really understand this
+
+    try {
+        if  (TotalPlants>maxPlantsCapacityOfGarden)
+        {
+            throw Error("Not enough space for plants")
+        }
+        
+    }
+    catch(Error){
+        console.log("space required to hold the originally provided number of plants exceeds the amount of space available")
 }
-    
+}
+
+
