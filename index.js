@@ -22,19 +22,17 @@ console.log("Max Capacity of plants = " + maxPlantsCapacityOfGarden);
 
 console.log("Number of Plants after " + week + " weeks = " + TotalPlants);
 
-
-
 // number of TotalPlants
-
 
 console.log("---------  WEEK 1 --------");
 
 
 {
+
     let week = 1;
     OriginalPlants = 20;
     let TotalPlants = OriginalPlants * (2 ** week); // total plants
-    TotalPlants = 20; // DOES THE FIRST WEEK GROW PLANTS OR WHAT I M CONFUSED
+    // DOES THE FIRST WEEK GROW PLANTS OR WHAT I M CONFUSED
     let maxPlantsCapacityOfGarden = (area / minimumSpace);
     let totalSpaceNeededForPlants = (TotalPlants * minimumSpace);
 
@@ -162,13 +160,11 @@ console.log("---------  WEEK 3 --------");
     }
 }
 
+console.log("---------  PART 2  --------");
 
 console.log("---------  WEEK 10 --------");
 
-
-
 // part 2 
-
 
 {
 
@@ -215,12 +211,13 @@ console.log("---------  WEEK 10 --------");
 
     //102400 total plants -  multiply by the minimum space needed 
     // 
+
+
     let NewSpaceNeeded = (TotalPlants * .8)
     console.log(NewSpaceNeeded);
 
     let NewRadius = Math.sqrt(NewSpaceNeeded / PI);
     console.log("This is the new radius required " + NewRadius);  // i think 
-
 
 
     //part 3  DOnt really understand this
@@ -230,11 +227,11 @@ console.log("---------  WEEK 10 --------");
         {
             throw Error("Not enough space for plants")
         }
-        
     }
     catch(Error){
         console.log("space required to hold the originally provided number of plants exceeds the amount of space available")
 }
+
 }
 
 
